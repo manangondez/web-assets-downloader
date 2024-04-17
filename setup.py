@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='web_assets_downloader',
-    version='1.0.5',
+    version='1.1.3',
     packages=find_packages(),
     install_requires=[
         'requests',
@@ -10,7 +10,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'web-assets-downloader = web_assets_downloader.downloader:main'
+            'web_assets_downloader = web_assets_downloader.downloader:main'
         ]
     },
     author='Ariffudin',
@@ -31,4 +31,11 @@ setup(
         'Programming Language :: Python :: 3.10',
         'Operating System :: OS Independent',
     ],
+    dependency_links=[
+        'git+https://github.com/arif-x/web-assets-downloader.git#egg=web-assets-downloader-1.1.0'
+    ],
+    project_urls={
+        'Source': 'https://github.com/arif-x/web-assets-downloader',
+        'Source Code': 'https://github.com/arif-x/web-assets-downloader'
+    }
 )
